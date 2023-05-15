@@ -8,7 +8,7 @@ app_name = 'blog'
 # Django URLs:
 # https://docs.djangoproject.com/en/4.2/topics/http/urls/
 urlpatterns = [
-    path('<int:id>/', views.post, name='post'),
     path('', views.blog, name='home'),
+    path('<int:post_id>/', views.post, name='post'),
     path('exemplo/', views.exemplo, name='exemplo'),
 ]
